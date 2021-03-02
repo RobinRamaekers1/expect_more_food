@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Expect more food - Order</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+<div class="container bg-light px-0 min-vh-100 flex-column">
+    <nav class="navbar navbar-dark navbar-collapse navbar-expand-md bg-dark text-light">
+        <a class="navbar-brand">Expect M<i class="fas fa-utensils text-primary"></i>RE food</a>
+        <button type="button" class="navbar-toggle collapsed ml-auto d-md-none" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><i class="fas fa-bars"></i></button>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <div class="collapse navbar-collapse ml-auto" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="order.html">Order</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="p-2">
+        <h1>Place your order!</h1>
+        <p>No cookies are used on this site. Expect MORE food ensures the security
+            and protection of the personal information that you submit via the form below.</p>
+        <form action="https://mcloots.sinners.be/form.php" method="post">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="your name here" required autofocus>
+            </p>
+            <p>
+                <label for="e-mail">Email:</label>
+                <input type="text" id="e-mail" name="e-mail" required>
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="0[48][0-9]{10}" required>
+            </p>
+            <p>
+                <label for="food">Study options in ITF</label>
+                <select name="food" id="food">
+                    <option value="pizza">Pizza (€ 7.95)</option>
+                    <option value="sandwich">Sandwich (€ 3.95)</option>
+                    <option value="salad">Salad (€ 5.95)</option>
+                </select>
+            </p>
+            <p>
+                <input type="radio" id="card" name="card" value="bank card">
+                <label for="card">Bank card</label><br>
+                <input type="radio" id="student" name="student" value="student bill">
+                <label for="student">Student bill</label><br>
+            </p>
+            <p>
+                <button type="submit" class="bg-primary">Order food</button>
+                <button type="reset" class="btn-outline-secondary">Erase values</button>
+            </p>
+        </form>
+    </main>
+
+    <footer class="bg-dark text-light text-center position-sticky">
+        <p><i class="fas fa-copyright"></i> Expect M<i class="fas fa-utensils text-primary"></i>RE food - 2021</p>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
