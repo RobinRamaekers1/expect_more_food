@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<div class="container bg-light px-0 min-vh-100 flex-column">
+<div class="container bg-light px-0 flex-column">
     <nav class="navbar navbar-dark navbar-collapse navbar-expand-md bg-dark text-light">
         <a class="navbar-brand">Expect M<i class="fas fa-utensils text-primary"></i>RE food</a>
         <button type="button" class="navbar-toggle collapsed ml-auto d-md-none" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><i class="fas fa-bars"></i></button>
@@ -38,11 +38,11 @@
         </div>
     </nav>
 
-    <main class="p-2">
-        <h1>Place your order!</h1>
+    <main>
+        <h1 class="m-3">Place your order!</h1>
         <p>No cookies are used on this site. Expect MORE food ensures the security
             and protection of the personal information that you submit via the form below.</p>
-        <form action="https://mcloots.sinners.be/form.php" method="post">
+        <form action="https://mcloots.sinners.be/form.php" method="post" class="m-1">
             <p>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="your name here" required autofocus>
@@ -56,14 +56,14 @@
                 <input type="tel" id="phone" name="phone" pattern="0[48][0-9]{10}" required>
             </p>
             <p>
-                <label for="food">Study options in ITF</label>
+                <label for="food">Food choice</label>
                 <select name="food" id="food">
                     <option value="pizza">Pizza (€ 7.95)</option>
                     <option value="sandwich">Sandwich (€ 3.95)</option>
                     <option value="salad">Salad (€ 5.95)</option>
                 </select>
             </p>
-            <p>
+            <p class="">
                 <input type="radio" id="card" name="card" value="bank card">
                 <label for="card">Bank card</label><br>
                 <input type="radio" id="student" name="student" value="student bill">
@@ -76,7 +76,7 @@
         </form>
     </main>
 
-    <footer class="bg-dark text-light text-center position-sticky">
+    <footer class="bg-dark text-light text-center position-bottom">
         <p><i class="fas fa-copyright"></i> Expect M<i class="fas fa-utensils text-primary"></i>RE food - 2021</p>
     </footer>
 </div>
